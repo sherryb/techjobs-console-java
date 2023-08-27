@@ -130,6 +130,7 @@ public class TechJobs {
                 }
                 System.out.println(asterisks + "\n");
             }
+
         } else {
             System.out.println("No Results");
         }
