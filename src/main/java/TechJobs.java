@@ -122,12 +122,17 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         String asterisks = "*****";
 
-        for(HashMap<String, String> job : someJobs) {
-            System.out.println(asterisks);
-            for(Entry<String, String> aJob : job.entrySet()){
-                System.out.println(aJob.getKey() + ": " + aJob.getValue());
+        if(!someJobs.isEmpty()){
+            for(HashMap<String, String> job : someJobs) {
+                System.out.println(asterisks);
+                for(Entry<String, String> aJob : job.entrySet()){
+                    System.out.println(aJob.getKey() + ": " + aJob.getValue());
+                }
+                System.out.println(asterisks + "\n");
             }
-            System.out.println(asterisks);
+
+        } else {
+            System.out.println("No Results");
         }
 
     }
