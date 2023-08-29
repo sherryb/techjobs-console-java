@@ -98,15 +98,12 @@ public class JobData {
         ArrayList<HashMap<String, String>> someJobs = new ArrayList<>();
 
         for(HashMap<String, String> aJob : allJobs) {
-//            for(Entry<String, String> jobProperty : aJob.entrySet()) {
-//
-//
-//            }
-            someJobs.add(aJob);
+            for(Entry<String, String> jobProperty : aJob.entrySet()) {
+                if(jobProperty.getValue().toLowerCase().contains(value.toLowerCase())) {
+                    someJobs.add(aJob);
+                }
+            }
         }
-
-
-
         return someJobs;
     }
 
