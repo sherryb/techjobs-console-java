@@ -100,6 +100,7 @@ public class JobData {
         for(HashMap<String, String> aJob : allJobs) {
             for(Entry<String, String> jobProperty : aJob.entrySet()) {
                 if(jobProperty.getValue().toLowerCase().contains(value.toLowerCase())) {
+                    System.out.println(jobProperty.getValue().toLowerCase());
                     someJobs.add(aJob);
                 }
             }

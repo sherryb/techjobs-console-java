@@ -128,7 +128,7 @@ public class TechJobs {
                 for(Entry<String, String> aJob : job.entrySet()){
                     System.out.println(aJob.getKey() + ": " + aJob.getValue());
                 }
-                System.out.println(asterisks + "\n");
+                System.out.println(asterisks + "\n ");
             }
 
         } else {
